@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="formDiv" id="form">
+        <form name="form">
+          <h3 style="text-align: center">SIGN UP</h3>
+          <div>
+            <label>Full name:</label><br />
+            <input class="input" type="text" id="name" />
+            <small id="small" style="display: none; color: red"
+              >name must be an alphabet!</small
+            >
+          </div>
+          <div>
+            <label>Email:</label><br />
+            <input class="input" type="email" id="email" />
+            <small id="smallEmail" style="display: none; color: red"
+              >Enter a valid email!</small
+            >
+          </div>
+          <div>
+            <label>Phone:</label><br />
+            <input class="input" type="number" id="phone" />
+            <small id="smallPhone" style="display: none; color: red"
+              >This is not a correct phone number!</small
+            >
+          </div>
+          <div>
+            <label>Gender:</label><br />
+            <input type="radio" name="gender" id="male" value="male" />
+            <label>Male</label><br />
+            <input type="radio" name="gender" id="female" value="female" />
+            <label>Female</label>
+            <small id="smallCheck" style="display: none; color: red"
+              >Select a Gender</small
+            >
+          </div>
+          <div>
+            <label>Password:</label><br />
+            <input class="input" type="password" id="password" />
+            <small id="smallPassword" style="display: none; color: red"
+              >Password must be up to 8 characters</small
+            >
+          </div>
+          <button onclick="click" id="button">Submit</button>
+          <p style="color: red; display: none" id="Incorrect">
+            All Fields are required
+          </p>
+          <p style="color: red; display: none" id="exists">
+            This email already exists
+          </p>
+          <p style="text-align: right">
+            Already a User <a href="login.html">Login</a>
+          </p>
+        </form>
+      </div>
+    </main>
+
+    <script src="signup.js"></script>
+  </body>
+</html>

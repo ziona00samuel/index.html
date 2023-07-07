@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="formDiv">
+        <form>
+          <h3 style="text-align: center">Reset Password</h3>
+          <!-- <p style="color: red; display: none; background-color: brown; " id="error">  Email and Password is incorrect</p> -->
+          <div>
+            <label>Input Email:</label><br />
+            <input class="input" type="email" id="email" />
+            <p style="color: red; display: none; padding: 5px" id="mail"></p>
+          </div>
+
+          <div>
+            <label>New Password:</label><br />
+            <input class="input" type="password" id="password" />
+            <p style="color: red; display: none" id="correctPassword"></p>
+          </div>
+          <div>
+            <label>Confirm New Password:</label><br />
+            <input class="input" type="password" id="confirmPass" />
+            <p style="color: red; display: none" id="confirmPassword">
+              Password is incorrect
+            </p>
+          </div>
+          <button id="button" onclick="click">Change Password</button>
+          <p style="text-align: right">
+            Back to Login <a href="todo.html">Sign-In</a>
+          </p>
+        </form>
+      </div>
+    </main>
+
+    <script src="todo.html"></script>
+  </body>
+</html>
